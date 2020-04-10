@@ -69,7 +69,6 @@ app.delete("/repositories/:id", (request, response) => {
 
 app.post("/repositories/:id/like", (request, response) => {
   const { id } = request.params;
-  const { title, url, techs } = request.body;
 
   const repository = repositories.find(repository => repository.id == id);
 
